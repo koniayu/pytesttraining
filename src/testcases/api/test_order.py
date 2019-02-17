@@ -4,6 +4,7 @@ import time
 import pytest
 import logging
 
+
 value=0
 
 
@@ -11,6 +12,7 @@ value=0
 def test_add2():
     print("I am 2")
     time.sleep(2)
+
     assert value == 10
 
 @pytest.mark.run(order=1)
@@ -19,6 +21,3 @@ def test_add():
     global value
     value =10
     assert value ==10
-
-
-

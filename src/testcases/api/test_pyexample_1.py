@@ -12,5 +12,5 @@ def test_add():
 def test_add2():
     print("I am 2")
     time.sleep(3)
-    assert  add(1.2, 3.1) == 5.3
+    assert add(1.2, 3.1) == 5.3
     assert add(1,2) == 3

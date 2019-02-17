@@ -200,9 +200,9 @@
         
     <div class='page-header'>
         <h1>执行报告</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2019-01-06 15:20:16</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:00.000939</p>
-<p class='attribute'><strong>状态:</strong> 通过 3 失败 1</p>
+    <p class='attribute'><strong>开始时间:</strong> 2019-02-16 23:33:51</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:00.000345</p>
+<p class='attribute'><strong>状态:</strong> 通过 4</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'>测试用例执行报告</p></div>
@@ -282,11 +282,11 @@ end method
     </td>
 </tr>
 
-    <tr class='failClass'>
+    <tr class='passClass'>
         <td>ut.example_class.simple_test</td>
         <td>2</td>
-        <td>1</td>
-        <td>1</td>
+        <td>2</td>
+        <td>0</td>
         <td>0</td>
         <td><a href="javascript:showClassDetail('c2',2)">详情</a></td>
     </tr>
@@ -308,20 +308,16 @@ end method
     </td>
 </tr>
 
-<tr id='ft2.2' class='none'>
-    <td class='failCase'><div class='testcase'>test_2nd</div></td>
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_2nd</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.2')" >
-        失败</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
+        通过</a>
 
-    <div id='div_ft2.2' class="popup_window">
-        <pre>ft2.2: [0, 1, 2, 3, 4, 5, 6, 7, 8]
-Traceback (most recent call last):
-  File "D:\study\cy\training\ceba\pytesttraining\src\ut\example_class.py", line 20, in test_2nd
-    self.assertEqual(self.foo.pop(), 9)
-AssertionError: 8 != 9
+    <div id='div_pt2.2' class="popup_window">
+        <pre>pt2.2: [0, 1, 2, 3, 4, 5, 6, 7, 8]
 </pre>
     </div>
     <!--css div popup end-->
@@ -332,8 +328,8 @@ AssertionError: 8 != 9
         <tr id='total_row'>
             <td>总计</td>
             <td>4</td>
-            <td>3</td>
-            <td>1</td>
+            <td>4</td>
+            <td>0</td>
             <td>0</td>
             <td>&nbsp;</td>
         </tr>
@@ -368,8 +364,8 @@ AssertionError: 8 != 9
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:3, name:'通过'},
-                        {value:1, name:'失败'},
+                        {value:4, name:'通过'},
+                        {value:0, name:'失败'},
                         {value:0, name:'错误'}
                     ],
                     itemStyle: {

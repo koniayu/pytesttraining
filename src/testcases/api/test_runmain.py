@@ -23,4 +23,4 @@ def test_s3():
     print("用例3：搜索python-3")
 
 if __name__ == "__main__":
-    pytest.main(["-s", "--reruns","3","test_teardown.py"])
+    pytest.main(["-s", "--reruns","3","test_runmain.py"])

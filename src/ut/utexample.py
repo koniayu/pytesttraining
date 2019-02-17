@@ -16,11 +16,12 @@ class MyClass(object):
 class TestMyClass(unittest.TestCase):
     def test_printNum(self):
         value = MyClass(6)
-        self.assertEquals(7, value.printNum())  # 当assertEquals失败时，会把第一个和第二个参数的值打印出来
+        #self.assertEquals(7, value.printNum())  # 当assertEquals失败时，会把第一个和第二个参数的值打印出来
         self.assertFalse(value.printNum() == 6)  # assertFalse和assertTrue不会打印值
 
 
 if __name__ == '__main__':
     #unittest.main()
+    print("run from main")
     suite = unittest.TestLoader().loadTestsFromTestCase(TestMyClass)
     unittest.TextTestRunner(verbosity=2).run(suite)
