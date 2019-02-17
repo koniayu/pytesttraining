@@ -16,7 +16,8 @@ class MyClass(object):
 class TestMyClass(unittest.TestCase):
     def test_printNum(self):
         value = MyClass(6)
-        #self.assertEquals(7, value.printNum())  # 当assertEquals失败时，会把第一个和第二个参数的值打印出来
+        #self.assertEqual(True,tested_result)
+        self.assertEquals(7, value.printNum())  # 当assertEquals失败时，会把第一个和第二个参数的值打印出来
         self.assertFalse(value.printNum() == 6)  # assertFalse和assertTrue不会打印值
 
 

@@ -24,4 +24,5 @@ class simple_test(unittest.TestCase):
         print("end class")
 
 if __name__ == '__main__':
+    print("I am main")
     unittest.main()
